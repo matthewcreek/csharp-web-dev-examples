@@ -1,7 +1,7 @@
-﻿using System;
+﻿
 namespace StudentExample
 {
-	public class Student
+    public class Student
 	{
         private static int nextStudentId = 1;
         public string Name { get; set; }
@@ -33,6 +33,34 @@ namespace StudentExample
             NumberOfCredits = 0;
             Gpa = 0.0;
         }
-	}
+
+        public string StudentInfo()
+        {
+            return (Name + " has a GPA of: " + Gpa);
+        }
+
+        public void AddGrade(int courseCredits, double grade)
+        {
+            NumberOfCredits += courseCredits;
+            //TODO: code to calculate GPA
+        }
+        public string GetGradeLevel()
+        {
+            int grade = NumberOfCredits/4;
+            string gradeLevel = grade.ToString();
+            return gradeLevel;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Student student &&
+                   studentId == student.studentId;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(studentId);
+        }
+    }
 }
 

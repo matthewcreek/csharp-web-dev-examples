@@ -3,7 +3,7 @@
 //This example is for "Classes Part 2: Customizing Fields"
 
 
-/*  TODO: remove this comment to run the code
+// /*  TODO: remove this comment to run the code
  
 FinalFields demo = new FinalFields();
 
@@ -25,4 +25,4 @@ demo.objectValue = new FortyTwo();
 // objectValue refers to.
 demo.objectValue.intValue = 6;
 
-*/ //TODO: remove this comment to run the code (maybe)
+// */ //TODO: remove this comment to run the code (maybe)
