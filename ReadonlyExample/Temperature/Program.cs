@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TemperatureExample;
+
+Console.WriteLine("Absolute zero in F is: " + Temperature.absoluteZeroFahrenheit);
+
+Temperature temp = new();
+
+Console.WriteLine(temp.absoluteZeroFehrenheit);
