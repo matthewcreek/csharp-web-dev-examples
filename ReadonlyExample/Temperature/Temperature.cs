@@ -4,7 +4,7 @@ namespace TemperatureExample
 	public class Temperature
 	{
         private double fahrenheit;
-        public static double absoluteZeroFahrenheit { get; } = -459.67;
+        public const double absoluteZeroFahrenheit = -459.67;
 
         public double Fahrenheit
         {
