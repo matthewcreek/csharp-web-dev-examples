@@ -18,7 +18,7 @@ do
         students.Add(newStudent, newGrade);
 
         // Read in the newline before looping back
-        Console.ReadLine();
+        // Console.ReadLine();
     }
 
 } while (!Equals(newStudent, ""));
